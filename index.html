@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Calibri;
+            border: none;
+            outline: none;
+            color: gray;
+        }
+        body {
+            background-image: url(https://picsum.photos/1440);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .div {
+            display: flex;
+            align-items: center;
+            flex-flow: column wrap;
+            gap: 20px;
+        }
+        #city {
+            margin-top: 100px;
+            padding: 10px 20px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            caret-color: blue;
+            width: 400px;
+        }
+        #submit {
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: 100px;
+            background-color: rgb(70, 165, 197);
+            color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+        #info {
+            text-align: center;
+            font-size: 36px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div">
+        <input type="text" id="city" placeholder="Введите ваш город...">
+        <p id="submit">Готово</p>
+    </div>
+
+    <p id="info"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
